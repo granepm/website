@@ -1,0 +1,67 @@
+.centerdiv {
+    min-height: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: #575757;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1070%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(33%2c 33%2c 33%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c433.251C103.279%2c441.028%2c216.598%2c528.534%2c302.17%2c470.186C388.35%2c411.423%2c359.069%2c275.858%2c380.53%2c173.782C397.019%2c95.354%2c421.221%2c20.317%2c413.525%2c-59.456C405.548%2c-142.143%2c380.853%2c-221.158%2c335.704%2c-290.889C285.478%2c-368.461%2c225.764%2c-443.426%2c141.032%2c-480.311C50.908%2c-519.543%2c-57.335%2c-541.054%2c-147.128%2c-501.071C-235.061%2c-461.916%2c-250.471%2c-344.11%2c-318.277%2c-275.789C-393.404%2c-200.091%2c-537.512%2c-184.405%2c-563.945%2c-81.083C-589.922%2c20.457%2c-492.199%2c110.023%2c-440.271%2c201.065C-393.042%2c283.868%2c-358.592%2c382.312%2c-274.274%2c426.779C-191.711%2c470.32%2c-93.077%2c426.242%2c0%2c433.251' fill='%23171717'%3e%3c/path%3e%3cpath d='M1440 1113.452C1550.849 1104.277 1672.885 1127.7849999999999 1762.9279999999999 1062.4859999999999 1851.934 997.938 1863.392 874.223 1908.278 773.855 1952.746 674.422 2021.7359999999999 584.715 2025.2820000000002 475.849 2029.191 355.82 2007.818 226.88799999999998 1929.0439999999999 136.24099999999999 1850.3020000000001 45.63099999999997 1720.962 29.178999999999974 1606.282-6.302999999999997 1489.863-42.32299999999998 1371.91-104.34400000000005 1254.271-72.53499999999997 1135.968-40.54600000000005 1033.627 51.769000000000005 981.438 162.65300000000002 933.294 264.943 1008.38 383.844 987.201 494.897 964.393 614.491 836.627 706.902 854.683 827.3050000000001 873.303 951.4680000000001 967.992 1063.807 1080.786 1118.949 1190.594 1172.632 1318.189 1123.5349999999999 1440 1113.452' fill='%232b2b2b'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1070'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.image {
+    width: 15vw;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@media all and (max-width:30em){
+    .image {
+        width: 50vw;
+    }
+}
+
+
+/* hover colors :D */
+::-moz-selection {
+    color:#000;
+    background: rgb(56, 56, 56);
+}
+::selection {
+    color:#000;
+    background: rgb(56, 56, 56);
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    
+}
+
+a:hover {
+    color:white;
+    text-decoration: none;
+    border: 1px dotted white;
+}
